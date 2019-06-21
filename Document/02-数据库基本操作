@@ -1,0 +1,18 @@
+1. 创建数据库
+    create database `smms`;
+
+2. node如何操作mysql
+    a. 准备sql
+        const sqlStr = `sql的增删改查语句`;
+
+    b. 执行sql
+        connetion.query(sqlStr, (err, data) => {
+            if (err) throw err;
+            // data是操作数据库的结果
+        })
+
+3. 增 删 改 查
+    增： insert into 表名(字段列表) values(值列表);
+    删:  delete from 表名 where 条件;
+    改:  update 表名 set 字段1=新的值1, 字段2=新的值2  where 条件;
+    查:  select 字段列表 from 表名  where 条件;

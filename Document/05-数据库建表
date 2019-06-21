@@ -1,0 +1,8 @@
+1. 账号表
+    create table `accounts` (
+        id int primary key auto_increment,
+        `account` varchar(50),
+        `password` varchar(50),
+        `userGroup` varchar(50),
+        `ctime` timestamp default current_timestamp
+    );

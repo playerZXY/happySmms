@@ -1,0 +1,18 @@
+1. 安装axios
+    cnpm i axios --save
+
+2. 在入口文件main.js引入axios
+    import axios from 'axios'
+
+3. 把axios挂载vue的原型上
+    Vue.prototype.req = axios;
+
+4. 那么在所有.vue单文件组件中，都可以使用
+    this.req 来发送请求
+
+5. 补充：如果是post请求，需要安装qs。
+    a. 安装
+        cnpm i qs --save
+    
+    b. 引入
+        import qs from 'qs';

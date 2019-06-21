@@ -1,0 +1,13 @@
+1. 安装 jsonwebtoken
+    cnpm i jsonwebtoken --save
+
+2. 引入
+    const jwt= require('jsonwebtoken');
+
+3.  定义秘钥
+   const secret = 'itsource';
+
+4. 生成token
+    const token = jwt.sign(这是要加密生成token数据对象, secret, {
+        expiresIn:  60 * 60 * 2 // 过期时间
+    });

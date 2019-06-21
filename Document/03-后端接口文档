@@ -1,0 +1,70 @@
+1. 请求url基本路径：
+    http://127.0.0.1:666
+
+2 账号管理模块
+    1. 测试路由url:  /account 
+    2. 添加账号url:  /account/accountadd
+        a. 参数说明: 
+            account   // 账号
+            password  // 密码
+            userGroup // 用户组
+        b. 返回字段说明:
+            code: 0成功  1失败
+            reason:  响应提示信息
+
+    3. 显示账号列表url: /account/accountlist
+        a. 参数说明: 无参数
+        b. 返回字段说明:
+            data   // Array  是所有账号数据
+            account   // 账号名
+            password // 密码
+            userGroup  // 用户组
+            ctime   // 创建时间
+
+    4. 单条删除url: /account/accountdel
+        a. 参数说明: 
+            id   // 数据id
+
+        b. 返回字段说明:
+            code: 0成功  1失败
+            reason:  响应提示信息
+
+    5. 修改数据回填url: /account/accountedit 
+        a. 参数说明: 
+            id   // 数据id
+
+        b. 返回字段说明:
+            data   // 数据
+
+    6. 保存修改url: /account/saveedit
+        a. 参数说明: 
+            id   // 原来数据的老id
+            account  // 账号
+            userGroup // 用户组
+
+        b. 返回字段说明:
+            code: 0成功  1失败
+            reason:  响应提示信息
+
+    7. 批量删除url: /account/batchdelete
+        a. 参数说明: 
+            idArr   // 要删除的id的数组
+
+        b. 返回字段说明:
+            code: 0成功  1失败
+            reason:  响应提示信息
+
+3 登录模块
+    1 检查用户名和密码是否正确url:  /login/checklogin
+        a. 参数说明: 
+            account   // 账号
+            password  // 密码
+
+        b. 返回字段说明:
+            code: 0成功  1失败
+            reason:  响应提示信息
+            token:   // token登录身份标识（令牌）
+
+
+
+    

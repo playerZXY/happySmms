@@ -1,0 +1,8 @@
+1. 安装moment
+    cnpm i moment --save
+
+2. 引入moment
+    import moment from 'moment'
+
+3. 使用moment
+    moment(时间戳).format('YYYY-MM-DD hh:mm:ss')
